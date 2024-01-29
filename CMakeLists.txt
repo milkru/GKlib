@@ -22,9 +22,6 @@ if(UNIX)
   target_link_libraries(GKlib m)
 endif(UNIX)
 
-include_directories("test")
-add_subdirectory("test")
-
 install(TARGETS GKlib
   ARCHIVE DESTINATION lib/${LINSTALL_PATH}
   LIBRARY DESTINATION lib/${LINSTALL_PATH})
